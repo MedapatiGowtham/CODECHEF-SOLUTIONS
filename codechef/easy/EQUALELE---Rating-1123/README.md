@@ -75,7 +75,7 @@ Thus, the final array is $[3, 3, 3, 3]$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T16:49:18.385Z  
+**Submitted:** 2026-08-18T16:51:20.482Z  
 
 ```java
 import java.util.Scanner;
