@@ -41,37 +41,36 @@ So the number of elements in the array with maximum frequency is 5.
 
 ## Solution
 
-**Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 23.2 MB (beats 67.64%)  
-**Submitted:** 2026-08-16T16:23:25.636Z  
+**Language:** Java  
+**Runtime:** 2 ms (beats 72.95%)  
+**Memory:** 44.2 MB (beats 33.60%)  
+**Submitted:** 2026-08-16T16:25:24.810Z  
 
-```cpp
+```java
 class Solution {
-public:
-    int maxFrequencyElements(vector<int>& nums)
+    public int maxFrequencyElements(int[] nums) 
     {
-        unordered_map<int, int> freq;
+        HashMap<Integer, Integer> freq = new HashMap<>();
         for (int num : nums) 
         {
-            freq[num]++;
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
         }
         int maxFreq = 0;
-        for (auto& [num, count] : freq)
+        for (int count : freq.values()) 
         {
-            maxFreq = max(maxFreq, count);
+            maxFreq = Math.max(maxFreq, count);
         }
         int ans = 0;
-        for (auto& [num, count] : freq)
+        for (int count : freq.values()) 
         {
-            if (count == maxFreq)
+            if (count == maxFreq) 
             {
                 ans += count;
             }
         }
         return ans;
     }
-};
+}
 ```
 
 ---
