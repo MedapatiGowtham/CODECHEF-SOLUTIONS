@@ -34,7 +34,7 @@ Explanation: All the characters in the given string are repeating.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T17:39:49.498Z  
+**Submitted:** 2026-08-17T17:31:20.094Z  
 
 ```java
 class Solution {
