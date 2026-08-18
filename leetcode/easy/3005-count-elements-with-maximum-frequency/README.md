@@ -43,8 +43,8 @@ So the number of elements in the array with maximum frequency is 5.
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 23.1 MB (beats 91.09%)  
-**Submitted:** 2026-08-16T16:15:50.632Z  
+**Memory:** 23.2 MB (beats 67.64%)  
+**Submitted:** 2026-08-16T16:23:25.636Z  
 
 ```cpp
 class Solution {
