@@ -48,16 +48,14 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-05T17:08:16.809Z  
+**Submitted:** 2026-09-05T17:08:54.104Z  
 
 ```java
 import java.util.Scanner;
-
 class BalancedParentheses {
     static final int MAX_SIZE = 101;
     static char[] a = new char[MAX_SIZE];
     static int top = -1;
-
     static void push(char ele) {
         if (top <= MAX_SIZE - 1) {
             a[++top] = ele;
@@ -65,7 +63,6 @@ class BalancedParentheses {
             System.out.println("Stack is full. Cannot push: " + ele);
         }
     }
-
     static char pop() {
         if (top >= 0) {
             char ele = a[top];
@@ -76,19 +73,15 @@ class BalancedParentheses {
             return '-';
         }
     }
-
     static boolean isEmpty() {
         return top == -1;
     }
-
     static boolean isFull() {
         return top >= MAX_SIZE;
     }
-
     static boolean isMatchingPair(char open, char close) {
         return (open == '(' && close == ')');
     }
-
     static boolean isBalanced(String expression) {
         for (int i=0; i<expression.length(); i++) {
             char ch = expression.charAt(i);
