@@ -1,6 +1,7 @@
-let scores = [10, 45, 23, 8];
-let totalScore = 0; 
-scores.forEach((score) => {
-    totalScore +=score
+let originalNumbers = [1, 5, 10];
+let doubledNumbers = [];
+originalNumbers.forEach((number) => {
+    let doubleValue = number*2;
+    doubledNumbers.push(doubleValue);
 });
-console.log("Total Score:", totalScore); 
+console.log("Doubled:", doubledNumbers);
