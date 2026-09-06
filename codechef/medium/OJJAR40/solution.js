@@ -1,7 +1,8 @@
-let originalNumbers = [1, 5, 10];
-let doubledNumbers = [];
-originalNumbers.forEach((number) => {
-    let doubleValue = number*2;
-    doubledNumbers.push(doubleValue);
+const users = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 },
+  { name: 'Charlie', age: 22 }
+];
+users.forEach((user) => {
+    console.log(`Hello, ${user.name}! you are ${user.age} years old.`);
 });
-console.log("Doubled:", doubledNumbers);
