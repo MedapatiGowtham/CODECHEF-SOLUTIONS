@@ -4,9 +4,11 @@
 
 ## Problem
 
-### Identify the errors
+### Print the length
 
-Identify and rectify the errors in the code provided to get the desired output.
+Write a program to print the length of each word of the sentence given below as well as the length of the whole sentence.
+
+ **Note**  - Make sure to give a space after every word or "-" when printing
 
 ### Sample 1:
 Input
@@ -17,7 +19,10 @@ Output
 ```
 
 ```
-Coding Chef
+Coding - 6  
+on - 2  
+CodeChef - 8  
+Coding on CodeChef - 18  
 ```
 
 ## Solution
@@ -25,16 +30,27 @@ Coding Chef
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-06T17:57:12.566Z  
+**Submitted:** 2026-09-06T17:59:28.517Z  
 
 ```java
-public class Main {
-    public static void main(String[] args) {
-        String one = "Coding";
-        String two = "Chaf";
-        two = two.replace('a', 'e');
-        System.out.println(one + " " + two);
-    }
+ class Codechef
+{
+	public static void main (String[] args) 
+	{
+		String one = "Coding";
+        String two = "on";
+        String three = "CodeChef";
+        String four = one+" "+two+" "+three;
+        System.out.println(one+" - "+one.length());
+        System.out.println(two+" - "+two.length());
+        System.out.println(three+" - "+three.length());
+        System.out.println(four+" - "+four.length());
+        
+        
+        // Complete the code
+        
+
+	}
 }
 
 ```
