@@ -4,23 +4,40 @@
 
 ## Problem
 
-_Description not available._
+### Greet Each User
+
+You are given an array of user objects. Each user has a `name` and an `age`. Your task is to use the `forEach()` method to print a greeting message for each user in the format:
+
+### Sample 1:
+Input
+Output
+
+```
+  
+```
+
+```
+Hello, Alice! You are 25 years old.
+Hello, Bob! You are 30 years old.
+Hello, Charlie! You are 22 years old.
+```
 
 ## Solution
 
 **Language:** JavaScript  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-06T18:10:30.087Z  
+**Submitted:** 2026-09-06T18:13:11.270Z  
 
 ```js
-let originalNumbers = [1, 5, 10];
-let doubledNumbers = [];
-originalNumbers.forEach((number) => {
-    let doubleValue = number*2;
-    doubledNumbers.push(doubleValue);
+const users = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 },
+  { name: 'Charlie', age: 22 }
+];
+users.forEach((user) => {
+    console.log(`Hello, ${user.name}! you are ${user.age} years old.`);
 });
-console.log("Doubled:", doubledNumbers);
 ```
 
 ---
