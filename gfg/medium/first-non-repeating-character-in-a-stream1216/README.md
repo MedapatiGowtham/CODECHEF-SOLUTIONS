@@ -34,7 +34,7 @@ At i=1 ("bb"): No non-repeating character, so '#'.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T17:35:21.268Z  
+**Submitted:** 2026-09-07T18:17:47.647Z  
 
 ```java
 class Solution {
