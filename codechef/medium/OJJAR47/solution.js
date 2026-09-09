@@ -1,3 +1,10 @@
-const cartPrices = [29.99, 9.99, 4.99, 14.99, 25.00];
-const totalPrice = cartPrices.reduce((sum, price) => sum+price, 0);
-console.log(totalPrice);
+const words = ["apple", "banana", "cherry", "watermelon", "kiwi"];
+const longestWord = words.reduce((longest, current) => {
+    if(current.length > longest.length) {
+        return current;
+    }
+    return longest;
+});
+console.log(longestWord);
+
+
