@@ -6,7 +6,7 @@ class Main {
         int y = sc.nextInt();
         int z = sc.nextInt();
         if((x*12) < (y*12)) {
-            System.out.println(x*12);
+            System.out.println(x*12+z);
         } else {
             System.out.println(y*12+z);
         }
