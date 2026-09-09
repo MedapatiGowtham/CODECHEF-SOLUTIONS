@@ -68,7 +68,7 @@ It's better to buy from the second shop, spending $53$ coins.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T14:37:16.880Z  
+**Submitted:** 2026-09-09T14:38:01.741Z  
 
 ```java
 import java.util.Scanner;
@@ -78,8 +78,10 @@ class Main {
         int x = sc.nextInt();
         int y = sc.nextInt();
         int z = sc.nextInt();
-        if((x*12+z) > (y*12+z)) {
+        if((x*12+z) < (y*12+z)) {
             System.out.println(x*12);
+        } else {
+            System.out.println(y*12);
         }
     }
 }
