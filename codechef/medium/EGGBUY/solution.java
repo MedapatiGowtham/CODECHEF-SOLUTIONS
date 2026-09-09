@@ -5,8 +5,10 @@ class Main {
         int x = sc.nextInt();
         int y = sc.nextInt();
         int z = sc.nextInt();
-        int xcost = x*12;
-        int ycost = y*12+z;
-        System.out.println(Math.min(xcost, ycost));
+        if((x*12) < (y*12)) {
+            System.out.println(x*12+z);
+        } else {
+            System.out.println(y*12+z);
+        }
     }
 }
