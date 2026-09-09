@@ -5,10 +5,10 @@ class Main {
         int x = sc.nextInt();
         int y = sc.nextInt();
         int z = sc.nextInt();
-        if((x*12+z) < (y*12+z)) {
+        if((x*12) < (y*12)) {
             System.out.println(x*12);
         } else {
-            System.out.println(y*12);
+            System.out.println(y*12+z);
         }
     }
 }
