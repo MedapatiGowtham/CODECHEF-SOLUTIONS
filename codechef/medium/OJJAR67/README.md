@@ -22,51 +22,38 @@ your final project should be like this
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-15T06:14:53.258Z  
+**Submitted:** 2026-09-15T06:31:53.755Z  
 
 ```cpp
-
-      <p>{bio}</p>
-    </div>
-  );
-};
-
-// Update the App component - Renders the ProfileCard component
-const App = () => {
-  const avatarUrl = "https://cdn.codechef.com/images/problems/PREACT018/a29545c678c75e59bc684868407b1d13.webp";
-
-  // update the user name and bio
-  const name = "John Doe";
-  const bio = "Frontend Developer | React Enthusiast | Codechef User";
-
-  return (
-    <div>
-
-      <h1 style={{ textAlign: "center", fontFamily: "Arial, sans-serif" }}>
-        {/* Write heading here */}
-      </h1>
-
-      {/* Render the ProfileCard component with user details */}
-      <ProfileCard
-
-
-
-    </div>
-  );
-};
-
-export default App;
       <h2 style={headingStyle}>{name}</h2>
 
-      <img src={avatarUrl} alt={`${name}'s avatar`} style={avatarStyle} />
-    <div style={cardStyle}>
-  return (
-        Profile Card
-        name={name}
-        bio={bio}
-        avatarUrl={avatarUrl}
-      />
+    borderRadius: "50%",
+    marginBottom: "10px",
+  };
 
+  return (
+    <div style={cardStyle}>
+      <img src={avatarUrl} alt={`${name}'s avatar`} style={avatarStyle} />
+    boxShadow: "2px 2px 10px rgba(0,0,0,0.1)",
+    fontFamily: "Arial, sans-serif",
+    margin: "auto",
+  };
+
+  const headingStyle = {
+    color: "blue",
+    fontSize: "20px",
+  };
+
+  const avatarStyle = {
+    width: "100px",
+    height: "100px",
+const ProfileCard = ({ name, bio, avatarUrl }) => {
+  const cardStyle = {
+    border: "2px solid #333",
+    padding: "20px",
+    borderRadius: "10px",
+    width: "250px",
+    textAlign: "center",
 ```
 
 ---
