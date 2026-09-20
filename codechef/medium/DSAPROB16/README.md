@@ -57,7 +57,7 @@ In the given array, the odd numbers are 1,3 and 5, and the even numbers are 2,4 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-20T16:57:54.421Z  
+**Submitted:** 2026-09-20T16:58:16.845Z  
 
 ```java
 import java.util.*;
