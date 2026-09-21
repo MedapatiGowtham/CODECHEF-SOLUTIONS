@@ -4,95 +4,59 @@
 
 ## Problem
 
-### Object Reference Sharing
+### Eligibility Checker for Students
 
-Consider the following Java code:
+You are tasked with designing a simple program that determines the eligibility of students based on their scores and ages.
 
-```
-class Counter {
-    private int count;
+ **Class Definitions:** 
 
-    public Counter(int count) {
-        this.count = count;
-    }
+- Student class: Attributes: name (String): The name of the student. score (int): The student's academic score. age (int): The age of the student. Methods: eligible(): A method that checks the student's eligibility and prints "YES" if the score is greater than 10 and the age is greater than 20. Otherwise, it prints "NO."
 
-    public void increment() {
-        count++;
-    }
+ **Main Class:** 
 
-    public int getCount() {
-        return count;
-    }
-}
+- Codechef class: The main method: Creates an instance of the Student class. Sets the name, score, and age attributes for the student with predefined values. Calls the eligible method to determine and display the student's eligibility.
+### Task
 
-public class Main {
-    public static void main(String[] args) {
-        Counter c1 = new Counter(5);
-        Counter c2 = c1;
-        
-        c1.increment();
-        
-        System.out.println(c2.getCount());
-    }
-}
-
-```
+Write the eligible method of student class to make Eligibility Checker for Students.
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T18:05:45.847Z  
+**Submitted:** 2026-09-21T18:06:21.906Z  
 
-```cpp
-class BankAccount {
-    private int accountNumber;
-    private String accountHolder;
-    private int balance;
+```java
+class Student {
+    public String name;
+    public int score;
+    public int age;
 
-    // Constructor to initialize the attributes
-    public BankAccount(int accountNumber, String accountHolder) {
-        this.accountNumber = accountNumber;
-        this.accountHolder = accountHolder;
-        this.balance = 0; // Initial balance is 0
-    }
-
-    // Deposit method
-    public void deposit(int amount) {
-        balance += amount;
-        System.out.println("Deposited: $" + amount);
-    }
-
-    // Withdraw method
-    public void withdraw(int amount) {
-        balance -= amount;
-        System.out.println("Withdrawn: $" + amount);
-    }
-
-    // Display account information
-    public void getAccountInfo() {
-        System.out.println("Account Number: " + accountNumber);
-        System.out.println("Account Holder: " + accountHolder);
-        System.out.println("Balance: $" + balance); 
+    public void eligible() {
+        // Update your code below this line
+        if(score>10 && age>20)
+        {
+            System.out.println("yes");
+        }
+        else
+        {
+            System.out.println("no");
+        }
+        
     }
 }
 
-public class Main {
-    public static void main(String[] args) {
-        // Create a BankAccount object
-        BankAccount account = new BankAccount(12345, "John Doe");
-
-        // Perform deposits and withdrawals and display account info
-        account.deposit(1000);
-        account.withdraw(500);
-        account.deposit(200);
-
-        // Display the final account information
-        account.getAccountInfo();
-    }
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Student obj = new Student();
+        obj.name = "Tom";
+        obj.score = 15;
+        obj.age = 21;
+        obj.eligible();
+	}
 }
-
 ```
 
 ---
