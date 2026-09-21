@@ -4,16 +4,18 @@
 
 ## Problem
 
-_Description not available._
+### Instance Variable
+
+What is an instance variable in Java?
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T18:04:57.823Z  
+**Submitted:** 2026-09-21T18:05:16.304Z  
 
-```java
+```cpp
 class BankAccount {
     private int accountNumber;
     private String accountHolder;
