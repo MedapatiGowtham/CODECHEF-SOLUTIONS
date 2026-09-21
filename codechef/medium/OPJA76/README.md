@@ -4,54 +4,68 @@
 
 ## Problem
 
-### Copy Constructor
+### Coding Problem
 
-In Java, a copy constructor is a special constructor that is used to create a new object as a copy of an existing object of the same class. It's like making a copy of something you already have.
+You are given a Student class having name and age as attributes and a display method. This class also has a parameterized constructor having name and age as parameters to initialize the value of name and age of student respectively.
+Given name and age as input, Create a student class, initialize the values and then print the information of Student using display method.
 
-You can refer to code example that illustrates the concept in an easy-to-understand way:
+### Input Format
+- First line contain a string representing name of the student.
+- Second line contain a integer representing age of the student.
+### Output Format
 
-- The Car class has two constructors: one to set the car's name and another called the copy constructor.
-- The copy constructor is called when we create a new car object (copiedCar) and initialize it using an existing car object (originalCar).
-- The copy constructor copies the car's name from the existing car to the new car, creating a new car that's a copy of the original one.
-- In the main() function, we create an originalCar, display its name, and then create a copiedCar using the copy constructor and display its name.
+Print the information of the student using display method.
 
- **Key points:** 
+### Sample 1:
+Input
+Output
 
-- The copy constructor is automatically called when an object is copied.
-- You can define your own copy constructor to handle deep copying of resources.
-## Task
+```
+Alice 
+12
+```
 
-Run the code to verify it works fine.
+```
+Alice 
+12
+```
 
 ## Solution
 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T18:07:50.939Z  
+**Submitted:** 2026-09-21T18:07:38.948Z  
 
 ```java
-class Car {
-    public String carName;
+import java.util.Scanner;
 
-    // Parameterized constructor
-    public Car(String carName) {
-        this.carName = carName;
+class Student {
+    public String name;
+    public int age;
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
-    // Copy constructor (constructor that takes an object of the same class)
-    public Car(Car c) {
-        this.carName = c.carName;
+    public void display() {
+        System.out.println(name);
+        System.out.println(age);
     }
 }
 
 class Codechef {
     public static void main(String[] args) {
-        Car originalCar = new Car("Beat"); // Parameterized constructor called here
-        System.out.println(originalCar.carName);
+        Scanner scanner = new Scanner(System.in);
 
-        Car copiedCar = new Car(originalCar); // Copy constructor called here
-        System.out.println(copiedCar.carName);
+        String name = scanner.next();
+        int age = scanner.nextInt();
+
+        Student obj = new Student(name, age);
+        obj.display();
+
+        scanner.close();
     }
 }
 
