@@ -4,16 +4,44 @@
 
 ## Problem
 
-_Description not available._
+### Object Reference Modification
+
+Consider the following Java code:
+
+```
+class Circle {
+    double radius;
+
+    Circle(double radius) {
+        this.radius = radius;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Circle myCircle = new Circle(5.0);
+        System.out.println("Before: Radius = " + myCircle.radius);
+        modifyCircle(myCircle);
+        System.out.println("After: Radius = " + myCircle.radius);
+    }
+
+    public static void modifyCircle(Circle circle) {
+        circle.radius = 10.0;
+    }
+}
+
+```
+
+What will be the output of the code?
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-22T17:21:54.554Z  
+**Submitted:** 2026-09-22T17:22:01.119Z  
 
-```java
+```cpp
 class Rectangle {
     private int length;
     private int width;
