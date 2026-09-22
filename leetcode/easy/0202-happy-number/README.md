@@ -47,22 +47,19 @@ Output: false
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 77.89%)  
-**Memory:** 42.8 MB (beats 11.83%)  
-**Submitted:** 2026-09-22T17:07:39.675Z  
+**Memory:** 42.3 MB (beats 78.57%)  
+**Submitted:** 2026-09-22T17:10:49.225Z  
 
 ```java
-import java.util.HashSet;
 class Solution {
     public boolean isHappy(int n) {
-        HashSet<Integer> set = new HashSet<>();
-        while (n != 1) {
-            if (set.contains(n)) {
-                return false;
-            }
-            set.add(n);
-            n = sumOfSquares(n);
+        int slow = sumOfSquares(n);
+        int fast = sumOfSquares(sumOfSquares(n));
+        while (slow != fast) {
+            slow = sumOfSquares(slow);
+            fast = sumOfSquares(sumOfSquares(fast));
         }
-        return true;
+        return slow == 1;
     }
     private int sumOfSquares(int n) {
         int sum = 0;
