@@ -1,35 +1,44 @@
-class Person {
-    private String name;
-    private int age;
+class Wheel {
+    String type;
 
-    // Constructor
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
+    Wheel(String type) {
+        this.type = type;
     }
 
-    // Getter methods
-    public String getName() {
-        return name;
+    void printType() {
+        System.out.println("Wheel Type: " + type);
+    }
+}
+
+class Car {
+    String make;
+    String model;
+    Wheel frontLeftWheel;
+    Wheel frontRightWheel;
+    Wheel rearLeftWheel;
+    Wheel rearRightWheel;
+
+    Car(String make, String model) {
+        this.make = make;
+        this.model = model;
+        frontLeftWheel = new Wheel("Front Left");
+        frontRightWheel = new Wheel("Front Right");
+        rearLeftWheel = new Wheel("Rear Left");
+        rearRightWheel = new Wheel("Rear Right");
     }
 
-    public int getAge() {
-        return age;
+    void printInfo() {
+        System.out.println("Make: " + make + ", Model: " + model);
+        frontLeftWheel.printType();
+        frontRightWheel.printType();
+        rearLeftWheel.printType();
+        rearRightWheel.printType();
     }
 }
 
 class Codechef {
-    // Method that takes a Person object as a parameter
-    public static void printPersonInfo(Person p) {
-        System.out.println("Name: " + p.getName());
-        System.out.println("Age: " + p.getAge());
-    }
-    
     public static void main(String[] args) {
-        // Create a Person object
-        Person person = new Person("Alice", 30);
-
-        // Call a method and pass the object as a parameter
-        printPersonInfo(person);
+        Car myCar = new Car("Toyota", "Camry");
+        myCar.printInfo();
     }
 }
