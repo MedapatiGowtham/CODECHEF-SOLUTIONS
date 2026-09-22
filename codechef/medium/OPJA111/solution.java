@@ -1,31 +1,21 @@
 class Calculator {
-    // Method to add two integers
-    int add(int a, int b) {
-        return a + b;
+    public int subtract(int a, int b) {
+        return a - b;
     }
 
-    // Method to add three integers
-    int add(int a, int b, int c) {
-        return a + b + c;
-    }
-
-    // Method to add four integers
-    int add(int a, int b, int c, int d) {
-        return a + b + c + d;
+    public double subtract(double a, double b) {
+        return a - b;
     }
 }
 
-class Codechef {
+class Codechef{
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
 
-        // Using the different overloaded add methods
-        int sum1 = calculator.add(2, 3);
-        int sum2 = calculator.add(2, 3, 4);
-        int sum3 = calculator.add(2, 3, 4, 5);
+        int intDifference = calculator.subtract(10, 4); 
+        double doubleDifference = calculator.subtract(5.5, 2.0); 
 
-        System.out.println("Sum1: " + sum1);
-        System.out.println("Sum2: " + sum2);
-        System.out.println("Sum3: " + sum3);
+        System.out.println("Integer Difference: " + intDifference);
+        System.out.println("Double Difference: " + doubleDifference);
     }
 }
