@@ -13,7 +13,7 @@ What happens if you provide a class with a user-defined constructor but do not p
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-21T18:09:37.235Z  
+**Submitted:** 2026-09-21T18:09:33.958Z  
 
 ```cpp
 class OuterClass {
