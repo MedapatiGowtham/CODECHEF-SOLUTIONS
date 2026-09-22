@@ -4,29 +4,27 @@
 
 ## Problem
 
-### Advantages of Function Overloading
-
-What is the main advantage of function overloading in Java?
+_Description not available._
 
 ## Solution
 
-**Language:** C++  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-22T17:24:26.954Z  
+**Submitted:** 2026-09-22T17:24:41.465Z  
 
-```cpp
+```java
 import java.util.Scanner;
 
-class ShapeCalculator {
-    // Calculate the area of a square
-    static int calculateArea(int sideLength) {
-        return sideLength * sideLength;
+class Adder {
+    // Function to add two integers
+    int add(int a, int b) {
+        return a + b;
     }
 
-    // Calculate the area of a rectangle
-    static int calculateArea(int length, int width) {
-        return length * width;
+    // Function to concatenate two strings
+    String add(String str1, String str2) {
+        return str1 + str2;
     }
 }
 
@@ -34,19 +32,18 @@ class Codechef {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int squareSide, length, width;
-        squareSide = scanner.nextInt();
-        length = scanner.nextInt();
-        width = scanner.nextInt();
+        Adder adder = new Adder();
 
-        // Calculate the area of a square
-        int squareArea = ShapeCalculator.calculateArea(squareSide);
+        int a, b;
+        String x, y;
 
-        // Calculate the area of a rectangle
-        int rectangleArea = ShapeCalculator.calculateArea(length, width);
+        a = scanner.nextInt();
+        b = scanner.nextInt();
+        x = scanner.next();
+        y = scanner.next();
 
-        System.out.println(squareArea);
-        System.out.println(rectangleArea);
+        System.out.println(adder.add(a, b));
+        System.out.println(adder.add(x, y));
     }
 }
 
