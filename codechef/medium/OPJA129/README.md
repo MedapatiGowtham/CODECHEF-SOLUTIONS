@@ -4,16 +4,18 @@
 
 ## Problem
 
-_Description not available._
+### Purpose of Abstract Methods
+
+What is the primary purpose of a abstract method in Java?
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T18:14:09.171Z  
+**Submitted:** 2026-09-23T18:14:25.576Z  
 
-```java
+```cpp
 abstract class Vehicle {
     String name;
 
