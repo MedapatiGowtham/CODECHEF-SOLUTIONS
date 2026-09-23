@@ -69,7 +69,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T17:27:34.797Z  
+**Submitted:** 2026-09-23T17:27:55.313Z  
 
 ```java
 public static int hasPairWithDifference(int[] A, int N, int B) {
