@@ -1,6 +1,4 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 class Codechef {
     public static String rearrangeString(String s) {
         int n = s.length();
