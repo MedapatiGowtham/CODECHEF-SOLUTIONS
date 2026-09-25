@@ -49,8 +49,8 @@ Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 45.6 MB (beats 85.83%)  
-**Submitted:** 2026-09-25T16:59:30.147Z  
+**Memory:** 45.8 MB (beats 55.02%)  
+**Submitted:** 2026-09-25T17:05:30.822Z  
 
 ```java
 class Solution {
