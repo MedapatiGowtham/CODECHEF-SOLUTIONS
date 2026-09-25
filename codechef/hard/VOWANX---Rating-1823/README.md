@@ -53,12 +53,10 @@ gacbade
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T17:43:46.255Z  
+**Submitted:** 2026-09-25T17:44:47.148Z  
 
 ```java
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 class Codechef {
     public static String rearrangeString(String s) {
         int n = s.length();
