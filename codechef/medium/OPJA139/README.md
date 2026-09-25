@@ -4,44 +4,43 @@
 
 ## Problem
 
-### Returning Object from Static function
+### Object Creation and Output
 
-Create a Java program that defines a simple string concatenation class.
-You should create a class called `Name` with the following properties and methods:
-
-- name (string): Represents a name that is a data member of the class.
-- static Name concatenateNames(Name obj1, Name obj2): A static method that takes two parameters, both of type Name objects: obj1: Represents the first name. obj2: Represents the second name. The method returns a new Name object with the name data member set to the result of concatenating the name data members of obj1 and obj2.
-
-In the main function:
-
-- Create an instance of the Name class and set the name data member to "Tom".
-- Create another instance of the Name class and set the name data member to "Jerry".
-- Use the concatenateNames static method from the Name class to concatenate the name data members of the two Name objects.
-- Display the concatenated name using the name data member of the returned Name object.
-### Task
-
-Complete this code to observe how objects can be returned from static functions.
-
-### Sample 1:
-Input
-Output
+Predict the output of this program.
 
 ```
- 
-```
+class Person {
+    public String name;
 
-```
-Tom Jerry
+    public Person(String _name) {
+        name = _name;
+    }
+
+    public Person createPerson(String newName) {
+        return new Person(newName);
+    }
+}
+
+class Codechef {
+    public static void main(String[] args) {
+        Person person = new Person("Alice");
+        Person newPerson = person.createPerson("Bob");
+
+        System.out.println("Original Person's Name: " + person.name);
+        System.out.println("New Person's Name: " + newPerson.name);
+    }
+}
+
 ```
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T17:48:54.096Z  
+**Submitted:** 2026-09-25T17:49:02.735Z  
 
-```java
+```cpp
 class Name {
     public String name; // Data member to store a name
 
