@@ -55,7 +55,7 @@ FLip all the elements as it is contiguous, then the arr would look like 1,1,1 an
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T17:56:18.700Z  
+**Submitted:** 2026-09-25T17:56:46.669Z  
 
 ```java
 import java.util.Scanner;
