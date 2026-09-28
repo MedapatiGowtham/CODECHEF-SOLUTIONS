@@ -25,16 +25,16 @@ Doubled: [ 2, 10, 20 ]
 **Language:** JavaScript  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-06T18:10:27.672Z  
+**Submitted:** 2026-09-28T09:50:21.898Z  
 
 ```js
-let originalNumbers = [1, 5, 10];
-let doubledNumbers = [];
-originalNumbers.forEach((number) => {
-    let doubleValue = number*2;
-    doubledNumbers.push(doubleValue);
+let originalNumbers=[1,5,10];
+let doubleNumbers=[];
+originalNumbers.forEach(function(number) {
+    let doubled =number * 2;
+    doubleNumbers.push(doubled);
 });
-console.log("Doubled:", doubledNumbers);
+console.log("Doubled:",doubleNumbers);
 ```
 
 ---
