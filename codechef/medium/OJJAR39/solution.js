@@ -1,7 +1,7 @@
-let originalNumbers = [1, 5, 10];
-let doubledNumbers = [];
-originalNumbers.forEach((number) => {
-    let doubleValue = number*2;
-    doubledNumbers.push(doubleValue);
+let originalNumbers=[1,5,10];
+let doubleNumbers=[];
+originalNumbers.forEach(function(number) {
+    let doubled =number * 2;
+    doubleNumbers.push(doubled);
 });
-console.log("Doubled:", doubledNumbers);
+console.log("Doubled:",doubleNumbers);
