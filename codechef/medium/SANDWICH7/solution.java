@@ -5,6 +5,6 @@ class Main {
         int bread = sc.nextInt();
         int ham = sc.nextInt();
         int cheese = sc.nextInt();
-        System.out.println(bread/2);
+        System.out.println(Math.min(bread/2, ham+cheese);
     }
 }
