@@ -54,7 +54,7 @@ No
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:46:11.663Z  
+**Submitted:** 2026-09-30T14:49:39.580Z  
 
 ```java
 import java.util.Scanner;
@@ -65,7 +65,11 @@ class Main {
         while(t-- > 0) {
             int n = sc.nextInt();
             int m = sc.nextInt();
-            
+            if((n*m%2)==0) {
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
         }
     }
 }
