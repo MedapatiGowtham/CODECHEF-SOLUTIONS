@@ -57,7 +57,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:39:12.335Z  
+**Submitted:** 2026-09-30T14:39:29.026Z  
 
 ```java
 import java.util.Scanner;
@@ -67,7 +67,7 @@ class Main {
         int bread = sc.nextInt();
         int ham = sc.nextInt();
         int cheese = sc.nextInt();
-        System.out.println(Math.min(bread/2, ham+cheese);
+        System.out.println(Math.min(bread/2, ham+cheese));
     }
 }
 ```
