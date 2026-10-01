@@ -54,7 +54,7 @@ The longest substring without repeating characters is "abc", which has a length 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-01T09:54:08.923Z  
+**Submitted:** 2026-10-01T09:54:41.797Z  
 
 ```java
 import java.util.*;
