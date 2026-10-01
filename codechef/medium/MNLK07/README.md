@@ -58,7 +58,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-01T09:39:20.042Z  
+**Submitted:** 2026-10-01T09:40:02.089Z  
 
 ```java
 import java.util.*;
@@ -72,13 +72,13 @@ class Codechef
 		// your code goes here
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		int a = 0;
-		int b = 1;
+		long a = 0;
+		long b = 1;
 		if(n == 1) {
 		    System.out.println(a);
 		} else {
 		    for(int i=2; i<=n; i++) {
-		        int c = a+b;
+		        long c = a+b;
 		        a = b;
 		        b = c;
 		    }
