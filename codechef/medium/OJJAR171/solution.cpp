@@ -1,0 +1,26 @@
+import ProductItem from './ProductItem';
+
+function ProductListingPage() {
+  const products = [
+      {
+            id: 1,
+                  title: "Wireless Headphones",
+                        price: 149.99,
+                              rating: 4,
+                                    image: "https://cdn.codechef.com/images/problems/PREACT075/a877198bea0e02993e95f97990e5d8c3.webp"
+                                        },
+                                            {
+                                                  id: 2,
+                                                        title: "Smart Watch",
+                                                              price: 199.99,
+                                                                    rating: 5,
+                                                                          image: "https://cdn.codechef.com/images/problems/PREACT075/1a458df9d6e719494c83fb7844c7fe33.jpg"
+                                                                              },
+                                                                                  {
+                                                                                        id: 3,
+                                                                                              title: "Bluetooth Speaker",
+                                                                                                    price: 79.99,
+                                                                                                          rating: 3,
+                                                                                                                image: "https://cdn.codechef.com/images/problems/PREACT075/59cfeeef191297272624b92a0fa5afe1.jpg"
+                                                                                                                    }
+                                                                                                                      ];
