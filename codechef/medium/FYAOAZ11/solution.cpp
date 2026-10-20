@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  </head>
+  <body>
+
+    <main>
+        <%- body %>
+          </main>
+
+            <%- include('partials/footer') %>
+            </body>
+            </html>
