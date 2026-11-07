@@ -18,7 +18,7 @@ app.post('/submit-feedback-form', (req, res) => {
       app.post('/submit-feedback-json', (req, res) => {
         console.log('JSON data received:');
           console.log(req.body);
-            app.json({ message: 'Feedback JSON data received!' });
+            res.json({ message: 'Feedback JSON data received!' });
             });
 
             const PORT = 3000;
